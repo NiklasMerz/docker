@@ -10,4 +10,4 @@ LABEL "com.github.actions.name"="Github Packages"
 LABEL "com.github.actions.description"="This is an Action to log into the docker registry of Github packages."
 COPY LICENSE README.md THIRD_PARTY_NOTICE.md /
 
-ENTRYPOINT echo "$GITHUB_TOKEN" | docker login  docker.pkg.github.com --username $DOCKER_USERNAME --password-stdin
+ENTRYPOINT echo "$DOCKER_PASSWORD" | docker login  docker.pkg.github.com --username $DOCKER_USERNAME --password-stdin

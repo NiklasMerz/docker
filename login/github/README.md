@@ -9,7 +9,7 @@ Because `$HOME` is persisted across Actions, the `docker login` command will sav
 There are two required Secrets to be set:
 
 * `DOCKER_USERNAME` - this is the username used to log in to your Docker registry.
-* `GITHUB_TOKEN` - this is the token
+* `DOCKER_PASSWORD` - this is the token
 
 An example of logging into Docker Hub would look like this:
 
